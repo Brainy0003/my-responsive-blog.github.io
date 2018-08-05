@@ -1,0 +1,385 @@
+/*
+*
+* zocial icons
+*
+*/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+	font-family: 'zocial', sans-serif;
+	text-shadow: 1px 1px 1px #aaa;
+	width:20%;
+	height: 50px;
+	cursor: pointer;
+	color:#fff;
+	font-size: 1em;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-webkit-align-items:center;
+	-moz-align-items:center;
+	-o-align-items:center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+/*
+* common styles & all elements
+*/
+
+html, body {
+	font-family: Roboto, sans-serif;font-size: 16px;margin: 0;
+	min-width: 100%;
+	background-size: contain;
+	overflow-x: hidden;}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/*
+*
+* clearfix
+*/
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*
+*
+* header
+*
+*/
+header {
+	height: 50px;
+	width: 100vw;
+	padding:1.5em;
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Orbitron', sans-serif;
+	box-shadow: 5px 5px 5px rgba(0,0,255,.2);
+}
+
+.header--icon {
+	font-size: 2.5em;
+	-webkit-animation:rotate 0.5s ease infinite;
+	animation:rotate 0.5s ease infinite;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+
+
+@keyframes rotate {
+	from {
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);	
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+
+
+h1 {
+	color: #00f;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	font-weight: 900;
+	font-family: 'Orbitron', sans-serif;
+	-webkit-animation:zoomIn 0.5s ease-in-out 1;
+	animation:zoomIn 0.5s ease-in-out 1;
+}
+
+@-webkit-keyframes zoomIn {
+	from {
+		-webkit-transform:scale(0,0);
+		transform:scale(0,0);
+	}
+	to{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+}
+
+
+@keyframes zoomIn {
+	from {
+		-webkit-transform:scale(0,0);
+		transform:scale(0,0);
+	}
+	to{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+}
+
+/*h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial;
+	font-stretch: ultra-expanded;
+	font-size: 3em;
+	font-weight: 500;
+	color: #00f;
+	letter-spacing: 1em;
+}*/
+
+/*
+* article
+*/
+
+article {
+	width: 50em;
+	margin: 0 auto;
+}
+
+article section p {
+	margin: 0 auto;
+	max-width: 90%;
+	color: #888;
+	font-family: Roboto;
+	font-size: 1.5em;
+	text-align: justify;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*
+* img
+*/
+
+img:first-child {
+	width:100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin:0 auto;
+	border-radius: 5px;
+	box-shadow: 0 15px 20px rgba(0,0,0,.4);
+	-webkit-animation:scaleIn 1s ease-in-out 1s 1;
+	animation:scaleIn 1s ease-in-out 1s 1;
+}
+
+@-webkit-keyframes scaleIn {
+	from {
+		-webkit-transform:scale(0,0);
+		transform:scale(0,0);
+	}
+	to{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+}
+
+
+@keyframes scaleIn {
+	from {
+		-webkit-transform:scale(0,0);
+		transform:scale(0,0);
+	}
+	to{
+		-webkit-transform:scale(1,1);
+		transform:scale(1,1);
+	}
+}
+
+/*
+* figure & figcaption
+*/
+
+figcaption {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #00f;
+	margin-top: 0.5em;
+}
+
+/*
+* zocials
+*/
+
+.zocial__icons {
+	height:200px;
+	width: 10%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	right:0;
+	top:50%;
+	position: fixed;
+	padding: 0.5em;
+	border-radius: 3px;
+	background:#00f;
+	-webkit-animation:fadeIn 1s ease-in-out 1s  1;
+	animation:fadeIn 1s ease-in-out 1s 1;
+}
+
+@-webkit-keyframes fadeIn {
+	from{
+		right:-200px;
+		opacity: 0;
+	}
+	to{
+		right:0;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from{
+		right:-200px;
+		opacity: 0;
+	}
+	to{
+		right:0;
+		opacity: 1;
+	}
+}
+
+/* 
+* footer
+*/
+
+footer {
+	border-top:1px solid #00f;
+	margin-top: 2em;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer p {
+	color:#999;
+	font-family:"open sans";
+	font-size: 0.8em;
+	letter-spacing: 0.25em;
+}
+
+
+/*
+*
+* responsiveness
+*
+*/
+@media screen and (max-width: 320px)  {
+	html {
+	   min-width: 100%;
+	   background-size: contain;
+	   overflow-x: hidden;
+	}
+	body 				{margin: 0;min-width: 100%;background-size: contain;overflow-x: hidden;}
+	
+	article 			{max-width: 100%;margin: 0;}
+
+	article p 			{width: :50%;font-size: 1.3em;word-spacing: -0.2em;font-family: Raleway;}
+
+	header 				{display: inline-flex;justify-content: flex-start;align-items: center;}
+
+	h1 					{font-size: 2.5em;}
+
+	img 				{display:;}
+
+	
+	.zocial__icons {
+		height:200px;
+		width: 15%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		right:0;
+		top:50%;
+		bottom: 50%;
+		position: fixed;
+		padding: 0.5em;
+		border-radius: 3px;
+		background:rgba(0,0,255,.5);
+		-webkit-animation:fadeIn 1s ease-in-out 1s  1;
+		animation:fadeIn 1s ease-in-out 1s 1;
+	}
+
+	[class*="zocial-"] 	{
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	body 				{margin: 0;overflow-x: auto;}
+	
+	article 			{width: 100%;}
+
+	article p 			{width: :50%;font-size: 1.3em;word-spacing: -0.2em;font-family: Raleway;}
+
+	header 				{display: inline-flex;justify-content: flex-start;align-items: center;}
+
+	h1 					{font-size: 1em;}
+
+	.zocial__icons 		{width:20%;background:rgba(0,0,255,.5);}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	header 				{display: inline-flex;justify-content: center;align-items: center;}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	header 				{display: inline-flex;justify-content: center;align-items: center;}
+
+	.zocial__icons 		{width:20%;background:rgba(0,0,255,.5);}
+}
+
+@media only screen and (max-width:768px) {
+
+	header 				{display: inline-flex;justify-content: center;align-items: center;}
+
+	.zocial__icons 		{width:20%;background:rgba(0,0,255,.5);}
+
+}
